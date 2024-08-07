@@ -5,7 +5,6 @@ function Skills() {
     "/assets/axios.png",
     "/assets/css.png",
     "/assets/exp.png",
-    "/assets/express.png",
     "/assets/figma.png",
     "/assets/git.png",
     "/assets/github.png",
