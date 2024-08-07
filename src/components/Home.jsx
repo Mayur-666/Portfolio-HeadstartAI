@@ -7,14 +7,15 @@ import {
   FaUserGraduate,
 } from "react-icons/fa";
 import { FaSackDollar } from "react-icons/fa6";
-import { Outlet, useNavigate } from "react-router-dom";
+import { Outlet, useLocation, useNavigate } from "react-router-dom";
 
 function Home() {
   const navigate = useNavigate();
+  const location = useLocation()
   // when navigate to different outlet, scroll to top
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, []);
+  }, [location]);
   
 
   return (

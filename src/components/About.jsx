@@ -10,9 +10,13 @@ function About() {
 
   const [post, setPost] = useState(0);
 
-  setInterval(() => {
-    setPost(post => (post + 1) % 4);
-  }, 6000);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setPost((post) => (post + 1) % designations.length);
+    }, 6000);
+
+    return () => clearInterval(interval); // Cleanup interval on component unmount
+  }, []);
 
   return (
       <div className="container-body">
