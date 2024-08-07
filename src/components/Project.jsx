@@ -37,7 +37,7 @@ function Project() {
       name: "Weather App",
     },
 
-    { img: "/assets/project0.jpg", link: null, name: "Conquest" },
+    { img: "/assets/project0.jpg", link: "https://github.com/Mayur-666/Conquest_Minor" , name: "Conquest" },
   ];
   return (
     <div className="project">
