@@ -11,7 +11,7 @@ function About() {
   const [post, setPost] = useState(0);
 
   setInterval(() => {
-    setPost((post + 1) % 4);
+    setPost(post => (post + 1) % 4);
   }, 6000);
 
   return (
