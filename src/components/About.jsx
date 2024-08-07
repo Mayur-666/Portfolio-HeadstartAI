@@ -22,7 +22,7 @@ function About() {
           </div>
           <div id="content-part">
             <p className="name">Mayur Sonare</p>
-            <p id="post" className="t">{designations[post]}</p>
+            <p id="post">{designations[post]}</p>
             <div className="links">
               <button
                 onClick={() =>
