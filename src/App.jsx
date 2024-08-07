@@ -1,4 +1,4 @@
-import {Routes, Route} from "react-router-dom"
+import {Routes, Route, BrowserRouter} from "react-router-dom"
 import Home from "./components/Home.jsx"
 import About from "./components/About.jsx"
 import Experience from "./components/Experience.jsx"
@@ -21,7 +21,7 @@ function App() {
 }, [ ])
  
   return (
-    <>
+    <BrowserRouter>
       <Routes>
         <Route exact path="/" element={<Home />}>
           <Route path="" element={<About />} />
@@ -32,7 +32,7 @@ function App() {
           <Route path="skills" element={<Skills />} />
         </Route>
       </Routes>
-    </>
+    </BrowserRouter>
   )
 }
 
