@@ -9,7 +9,7 @@ function Academic() {
       duration: "2021 - Present",
     },
     {
-      name: "Gyan Sagar Acadmemy",
+      name: "Gyan Sagar Academy",
       domain: "12th Standard",
       percentage: "95.6%",
       duration: "2020 - 2021",
